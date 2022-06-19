@@ -9,7 +9,6 @@ repo_name = sys.argv[3]
 def create():
     user = Github(gh_key).get_user()
     repo = user.create_repo(repo_name)
-
     print(f"Succesfully created repository {repo_name}")
 
 if __name__ == "__main__":
